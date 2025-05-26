@@ -2,15 +2,15 @@
 
 def somme(nb1,nb2):
     somme = nb1 + nb2
-    print("La somme des deux nombres est :", somme)
+    return f"La somme des deux nombres est : {somme} ")
 
-somme(12,15)
+print(somme(12,15))
 
 
 def longueur(chaine):
     longueur_chaine = len(chaine)
-    print("La longueur de la chaine de caractère est : ", longueur_chaine)
-longueur("Comment allez-vous ?")
+    return f"La longueur de la chaine de caractère est : {longueur_chaine} "
+print(longueur("Comment allez-vous ?"))
 
 
 def nb_max(tab):
