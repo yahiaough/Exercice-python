@@ -18,7 +18,7 @@ def nb_max(tab):
     for i in range(len(tab)):
         if tab[i] > n :
             n = tab[i]
-    print("Le nombre le plus grand est ", n )
+    return f"Le nombre le plus grand est {n} "
 nb_max([12,15,72,211,121,124,31,73,93,101])
 
     
