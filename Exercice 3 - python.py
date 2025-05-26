@@ -2,7 +2,7 @@
 
 def somme(nb1,nb2):
     somme = nb1 + nb2
-    return f"La somme des deux nombres est : {somme} ")
+    return f"La somme des deux nombres est : {somme} "
 
 print(somme(12,15))
 
