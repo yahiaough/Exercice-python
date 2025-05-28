@@ -19,15 +19,22 @@ def menu():
     print("4. Division")
     print("5. Quitter")
     
-    nb = int(input("Veuillez choisir un nombre entre 1 et 5 : "))
+menu()
 
-    if nb >= 5 or nb < 0:
+try:
+    nb = int(input("Veuillez choisir un nombre entre 1 et 5 : "))
+    if nb == 5:
         print("Vous avez quitté.")
-        return 
-    
+    elif nb < 1 or nb > 5:
+        print("Choix invalide. Veuillez réessayer.")
+except ValueError:
+    print("Erreur, le caractère saisi n'est pas un nombre entier compris entre 1 et 5. : ")
+try:
     nb1 = int(input("Veuillez choisir un premier nombre : "))
     nb2 = int(input("Veuillez choisir un deuxième nombre : "))
-
+except ValueError:
+    print("Erreur, le caractère saisi n'est pas un nombre entier.")
+    
     if nb == 1:
         print("Résultat :", addition(nb1, nb2))
     elif nb == 2:
@@ -38,5 +45,3 @@ def menu():
         print("Résultat :", division(nb1, nb2))
     else:
         print("Veuillez relancer.")
-
-menu()
